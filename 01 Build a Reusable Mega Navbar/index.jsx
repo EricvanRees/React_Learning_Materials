@@ -1,3 +1,5 @@
+// In this workshop, you will practice working with React functional components by building a reusable navbar.
+
 export const Navbar = () => {
   return (
     <nav className="navbar">

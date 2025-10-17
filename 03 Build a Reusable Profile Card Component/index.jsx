@@ -1,3 +1,5 @@
+// In this workshop, you will learn how to work with props by building a reusable profile card component.
+
 export function Card({ name, title, bio }) {
   return (
     <div className="card">
@@ -9,6 +11,7 @@ export function Card({ name, title, bio }) {
 }
 
 export function App() {
+  // create an array of profile data and use that data to render the Card components dynamically.
   const profiles = [
     {
       id: 1,
@@ -30,8 +33,10 @@ export function App() {
   ];
   return (
     <div className="flex-container">
+      {/*use the map method to iterate through the different objects and render the components dynamically*/}
       {profiles.map((profile) => (
         <Card
+          /*The key prop helps React identify which items have changed, are added, or are removed. This improves performance and allows for more efficient updates.*/
           key={profile.id}
           name={profile.name}
           title={profile.title}
