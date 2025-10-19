@@ -10,6 +10,7 @@ export function Card({ name, title, bio }) {
   )
 }
 
+// To start using the Card component, use the export keyword to create an App functional component.
 export function App() {
   // create an array of profile data and use that data to render the Card components dynamically.
   const profiles = [
