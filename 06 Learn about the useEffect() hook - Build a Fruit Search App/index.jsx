@@ -20,7 +20,8 @@ export function FruitsSearch() {
         />
       </form>
       <div id="results">
-
+          {results.length > 0 ? (results.map(item => (<p key={item} className="result-item">{item}</p>))) : (<p>No results found</p>
+        )}
       </div>
     </div>
   );
